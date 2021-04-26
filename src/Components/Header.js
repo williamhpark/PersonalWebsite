@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     if (this.props.data) {
-      var name = this.props.data.name;
       var firstname = this.props.data.firstname;
       var occupation = this.props.data.occupation;
       var description = this.props.data.description;
@@ -41,13 +40,8 @@ class Header extends Component {
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#resume">
-                Resume
-              </a>
-            </li>
-            <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                Projects
               </a>
             </li>
             <li>

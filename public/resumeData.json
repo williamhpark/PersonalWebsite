@@ -5,7 +5,7 @@
     "occupation": "Software Developer",
     "description": "I'm currently in the computer engineering program at the University of Waterloo, entering my 2B term in Fall 2021",
     "image": "profilepic.jpg",
-    "bio": "I'm passionate about programming, with a particular interest in web development (full-stack), machine learning, and blockchain. I also love music - I've been playing the guitar for eight years (fingerstyle, jazz, rock) and I worked as an instructor for three years.",
+    "bio": "I'm passionate about programming, particularly in web development (full-stack), machine learning, and blockchain. I also love music - I've been playing the guitar for eight years (fingerstyle, jazz, rock) and I worked as an instructor for three years.",
     "contactmessage": "Feel free to reach out to me if you have any inquiries.",
     "email": "william.park@uwaterloo.ca",
     "phone": "519-781-8270",
@@ -15,11 +15,6 @@
     "website": "https://www.williampark.com",
     "resumedownload": "http://timbakerdev.com",
     "social": [
-      {
-        "name": "twitter",
-        "url": "http://twitter.com",
-        "className": "fa fa-twitter"
-      },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/williamparkuw/",
@@ -45,12 +40,6 @@
         "degree": "BASc Computer Engineering",
         "graduated": "Present",
         "description": "Scholarships: President’s Scholarship of Distinction -  Awarded to students with an admission average of 95% or higher; Nortel Networks Undergraduate Scholarship - Awarded to outstanding students entering year one of electrical and computer engineering."
-      },
-      {
-        "school": "Port Moody Secondary School",
-        "degree": "International Baccalaureate",
-        "graduated": "July 2019",
-        "description": ""
       }
     ],
     "work": [
