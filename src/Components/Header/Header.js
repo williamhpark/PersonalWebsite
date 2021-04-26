@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./Header.css";
+
 class Header extends Component {
   render() {
     if (this.props.data) {
@@ -10,7 +12,7 @@ class Header extends Component {
       var networks = this.props.data.social.map(function (network) {
         return (
           <li key={network.name}>
-            <a href={network.url}>
+            <a href={network.url} target="_blank" rel="noopener noreferrer">
               <i className={network.className}></i>
             </a>
           </li>

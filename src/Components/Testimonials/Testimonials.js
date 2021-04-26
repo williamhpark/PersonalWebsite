@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./Testimonials.css";
+
 class Testimonials extends Component {
   render() {
     if (this.props.data) {

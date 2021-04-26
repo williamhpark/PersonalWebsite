@@ -1,18 +1,11 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { Button, Header, Icon, Modal } from "semantic-ui-react";
 
-import Slide from "./Slide";
-import ModalComp from "./ModalComp";
-
-const algoracer = "images/algoracer.png";
-const restobot = "images/restobot.png";
-const netflix = "images/netflix.jpg";
-const pingPongLauncher = "images/pingPongLauncher.jpg";
+import "./Carousel.css";
+import algoracer from "../../assets/images/algoracer.png";
+import restobot from "../../assets/images/restobot.png";
+import netflix from "../../assets/images/netflix.jpg";
+import pingPongLauncher from "../../assets/images/pingPongLauncher.jpg";
 
 const Carousel = () => {
   const [items, setItems] = useState([
@@ -58,6 +51,7 @@ const Carousel = () => {
     },
   ]);
   const [x, setX] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const showModal = (id) => {
     let updatedItems = [...items];
@@ -79,21 +73,29 @@ const Carousel = () => {
           key={index}
           style={{ transform: `translateX(${x}%)` }}
         >
-          <Slide src={item.src} alt={item.alt} title={item.title} />
-          <Button
-            className="details-btn"
-            variant="info"
-            onClick={() => showModal(item.id)}
+          <div className="slide__title-container">
+            <h3 className="slide__title">{item.title}</h3>
+          </div>
+          <img className="slide__image" src={item.src} alt={item.alt} />
+          <Modal
+            closeIcon
+            open={open}
+            trigger={<Button>Click for details</Button>}
+            onClose={() => hideModal(item.id)}
+            onOpen={() => showModal(item.id)}
           >
-            Click for details
-          </Button>
-          <ModalComp
-            title={item.title}
-            text={item.text}
-            link={item.link}
-            show={item.modalShow}
-            onHide={() => hideModal(item.id)}
-          />
+            <Header content={item.title} />
+            <Modal.Content>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `<p>${item.text}</p>`,
+                }}
+              />
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            </Modal.Content>
+          </Modal>
         </div>
       );
     });
@@ -112,10 +114,10 @@ const Carousel = () => {
       <div className="carousel shadow-lg">
         {makeSlides(items)}
         <button id="arrow-left" onClick={goLeft}>
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <i className="icon-left-circle"></i>
         </button>
         <button id="arrow-right" onClick={goRight}>
-          <FontAwesomeIcon icon={faChevronRight} />
+          <i className="icon-right-circle"></i>
         </button>
       </div>
     </div>

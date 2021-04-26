@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 
+import "./About.css";
+import resume from "../../assets/documents/resume_WilliamPark.pdf";
+
 class About extends Component {
   render() {
     if (this.props.data) {
       var profilepic = "images/" + this.props.data.image;
       var bio = this.props.data.bio;
-      var resumeDownload = this.props.data.resumedownload;
     }
 
     return (
@@ -24,7 +26,11 @@ class About extends Component {
             <div className="row">
               <div className="columns download">
                 <p>
-                  <a href={resumeDownload} className="button">
+                  <a
+                    href={resume}
+                    className="button"
+                    download="WilliamPark_resume"
+                  >
                     <i className="fa fa-download"></i>Download Resume
                   </a>
                 </p>
