@@ -1,0 +1,19 @@
+#portfolio {
+  background: #ebeeee;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+#portfolio h1 {
+  font: 15px/24px "opensans-semibold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #95a3a3;
+}
+
+@media (max-width: 768px) {
+  #portfolio {
+    padding-bottom: 0;
+  }
+}

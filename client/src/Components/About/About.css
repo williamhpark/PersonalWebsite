@@ -1,0 +1,91 @@
+#about {
+  background: #2b2b2b;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+
+#about a,
+#about a:visited {
+  color: #fff;
+}
+#about a:hover,
+#about a:focus {
+  color: #11abb0;
+}
+
+#about h2 {
+  font: 22px/30px "opensans-bold", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+#about p {
+  line-height: 30px;
+  color: #8b8b8b;
+}
+#about .profile-pic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+#about .contact-details {
+  width: 41.66667%;
+}
+#about .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#about .main-col {
+  padding-right: 5%;
+}
+#about .download .button {
+  margin-top: 6px;
+  background: #444;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#about .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+/* screenwidth less than 900px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+  /* About Section
+     ------------------------------------------------------------------- */
+  #about .profile-pic {
+    width: 114px;
+    height: 114px;
+    margin-left: 12px;
+  }
+  #about .contact-details {
+    width: 50%;
+  }
+  #about .download {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* mobile navigation
+     -------------------------------------------------------------------- */
+  #about .profile-pic {
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+  #about h2 {
+    text-align: center;
+  }
+  #about .download .button {
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+  }
+  #about .main-col {
+    padding-right: 30px;
+  }
+}
