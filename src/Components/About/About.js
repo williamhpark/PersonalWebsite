@@ -57,8 +57,6 @@ const About = (props) => {
             <p>Song</p>
             <iframe
               src={song}
-              width="235"
-              height="235"
               frameborder="0"
               allowtransparency="true"
               allow="encrypted-media"
@@ -67,18 +65,13 @@ const About = (props) => {
           <div className="four columns">
             <p>Movie</p>
             <a href={movieLink} target="_blank" rel="noreferrer">
-              <img
-                src={movieImage}
-                alt="Movie poster"
-                width="235"
-                height="235"
-              />
+              <img src={movieImage} alt="Movie poster" />
             </a>
           </div>
           <div className="four columns">
             <p>Book</p>
             <a href={bookLink} target="_blank" rel="noreferrer">
-              <img src={bookImage} alt="Book cover" width="235" height="235" />
+              <img src={bookImage} alt="Book cover" />
             </a>
           </div>
         </div>
