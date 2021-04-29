@@ -12,7 +12,7 @@
   color: #95a3a3;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #portfolio {
     padding-bottom: 0;
   }

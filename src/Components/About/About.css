@@ -53,8 +53,8 @@ img {
   height: 235px;
   transition: width 1s, height 1s;
 }
-#about .fav-things iframe:hover,
-img:hover {
+#about .fav-things img:hover,
+#about .fav-things iframe:hover {
   width: 240px;
   height: 240px;
 }

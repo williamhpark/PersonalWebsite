@@ -8,7 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
 import Resume from "./Components/Resume/Resume";
 import Contact from "./Components/Contact/Contact";
-import Testimonials from "./Components/Testimonials/Testimonials";
+// import Testimonials from "./Components/Testimonials/Testimonials";
 import Portfolio from "./Components/Portfolio/Portfolio";
 
 const App = () => {

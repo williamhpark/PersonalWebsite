@@ -56,6 +56,7 @@ const About = (props) => {
           <div className="four columns">
             <p>Song</p>
             <iframe
+              title="Spotify song"
               src={song}
               frameborder="0"
               allowtransparency="true"
