@@ -77,11 +77,22 @@
   color: #11abb0;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .carousel-container {
     width: 90vw;
     margin-bottom: 10rem;
   }
+  #arrow-left,
+  #arrow-right {
+    top: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* .carousel-container {
+    width: 90vw;
+    margin-bottom: 10rem;
+  } */
   #arrow-left,
   #arrow-right {
     top: 65%;
