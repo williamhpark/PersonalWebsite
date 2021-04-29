@@ -43,7 +43,7 @@ const Carousel = () => {
       id: 3,
       title: "Ping-Pong Ball Launcher",
       text:
-        "This was a fun mini-project that I made over a weekend. An automatic ping-pong ball launcher that I use when I want to practice on my own, created using an Arduino UNO board, some cardboard and a few motors. Check out my <a href='http://williampark.site/blog/5ffad7f8e5a1773e08f9de7a' target='_blank' rel='noopener noreferrer'>blog post</a> for more details.",
+        "This was a fun mini-project that I made over a weekend. An automatic ping-pong ball launcher that I use when I want to practice on my own, created using an Arduino UNO board, some cardboard and a few motors. Check out <a href='https://youtu.be/kECmW9rIQX0' target='_blank' rel='noopener noreferrer'>this video</a> to see it in action.",
       src: pingPongLauncher,
       alt: "Fourth slide showing the automatic ping-pong ball launcher",
       link: "https://github.com/williamhpark/ping_pong_launcher",
