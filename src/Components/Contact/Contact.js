@@ -122,10 +122,9 @@ const Contact = (props) => {
                 </label>
                 <textarea
                   cols="50"
-                  rows="15"
+                  rows="5"
                   id="message"
                   name="message"
-                  resize="vertical"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required

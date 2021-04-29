@@ -1,9 +1,9 @@
-#portfolio {
+#projects {
   background: #ebeeee;
   padding-top: 70px;
   padding-bottom: 60px;
 }
-#portfolio h1 {
+#projects h1 {
   font: 15px/24px "opensans-semibold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  #portfolio {
+  #projects {
     padding-bottom: 0;
   }
 }

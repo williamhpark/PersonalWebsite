@@ -76,6 +76,9 @@
   line-height: 24px;
   width: 65%;
 }
+#contact textarea {
+  resize: vertical;
+}
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
