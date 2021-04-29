@@ -3,9 +3,10 @@
     "name": "William Park",
     "firstname": "William",
     "occupation": "Software Developer",
-    "description": "I'm currently in the computer engineering program at the University of Waterloo, entering my 2B term in Fall 2021",
+    "degree": "Computer Engineering",
+    "school": "University of Waterloo",
     "image": "profilepic.jpg",
-    "bio": "I'm passionate about programming, particularly in web development (full-stack), machine learning, and blockchain. I also love music - I've been playing the guitar for eight years (fingerstyle, jazz, rock) and I worked as an instructor for three years.",
+    "bio": "I'm passionate about programming and technology in general. Most of my programming experience comes from full-stack web development, but I'm also fascinated by concepts like machine learning and blockchain. I also love music - I've been playing the guitar for eight years (fingerstyle, jazz, rock) and I worked as an instructor for three years.",
     "contactmessage": "Feel free to reach out to me if you have any inquiries.",
     "email": "william.park@uwaterloo.ca",
     "phone": "519-781-8270",
@@ -13,7 +14,6 @@
       "city": "Waterloo/Vancouver"
     },
     "website": "https://www.williampark.com",
-    "resumedownload": "http://timbakerdev.com",
     "social": [
       {
         "name": "linkedin",
@@ -30,16 +30,31 @@
         "url": "https://github.com/williamhpark",
         "className": "fa fa-github"
       }
-    ]
+    ],
+    "song": {
+      "title": "Calvin's Joint",
+      "image": "",
+      "link": "https://open.spotify.com/embed/track/33VQJLL7QWS0LUuF7r39Rq"
+    },
+    "movie": {
+      "title": "1917",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/fe/1917_%282019%29_Film_Poster.jpeg",
+      "link": "https://www.imdb.com/title/tt8579674/"
+    },
+    "book": {
+      "title": "Battle Royale",
+      "image": "https://m.media-amazon.com/images/I/613NH082GQL._SL500_.jpg",
+      "link": "https://www.goodreads.com/book/show/57891.Battle_Royale"
+    }
   },
   "resume": {
-    "skillmessage": "Here are some skills that I've picked up through work, school and personal projects.",
+    "skillmessage": "Here are some skills that I've picked up through work, school, and personal projects.",
     "education": [
       {
         "school": "University of Waterloo",
         "degree": "BASc Computer Engineering",
         "graduated": "Present",
-        "description": "Scholarships: President’s Scholarship of Distinction -  Awarded to students with an admission average of 95% or higher; Nortel Networks Undergraduate Scholarship - Awarded to outstanding students entering year one of electrical and computer engineering."
+        "description": ""
       }
     ],
     "work": [
@@ -67,10 +82,6 @@
       },
       {
         "name": "Python",
-        "level": "80%"
-      },
-      {
-        "name": "Git",
         "level": "80%"
       },
       {

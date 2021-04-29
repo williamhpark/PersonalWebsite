@@ -38,7 +38,7 @@ header .banner-text h1 {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 header .banner-text h3 {
-  font: 18px/1.9em "librebaskerville-regular", sans-serif;
+  font: 18px/1.9em "opensans", sans-serif;
   color: #c0c0c0;
   margin: 0 auto;
   width: 70%;
@@ -196,7 +196,7 @@ ul#nav li.current a {
     letter-spacing: -1px;
   }
   header .banner-text h3 {
-    font: 17px/1.9em "librebaskerville-regular", serif;
+    font: 17px/1.9em "opensans", serif;
     width: 80%;
   }
   header .banner-text hr {
@@ -310,7 +310,7 @@ ul#nav li.current a {
     font: 68px/1.1em "opensans-bold", sans-serif;
   }
   header .banner-text h3 {
-    font: 16px/1.9em "librebaskerville-regular", serif;
+    font: 16px/1.9em "opensans", serif;
     width: 85%;
   }
   header .banner-text hr {
@@ -321,11 +321,11 @@ ul#nav li.current a {
   /* header social links */
   header .social {
     margin: 18px 0 24px 0;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 36px;
   }
   header .social li {
-    margin: 0 10px;
+    margin: 0 15px;
   }
 
   /* scrolldown link */
@@ -354,15 +354,15 @@ ul#nav li.current a {
     margin: 0 auto 24px auto;
   }
   header .banner-text h3 {
-    font: 14px/1.9em "librebaskerville-regular", sans-serif;
+    font: 14px/1.9em "opensans", sans-serif;
     width: 90%;
   }
 
   /* header social links */
   header .social {
-    font-size: 20px;
+    font-size: 30px;
   }
   header .social li {
-    margin: 0 6px;
+    margin: 0 15px;
   }
 }

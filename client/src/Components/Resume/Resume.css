@@ -35,7 +35,8 @@
 }
 
 .education,
-.work {
+.work,
+.skill {
   margin-bottom: 48px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e8e8e8;
@@ -55,6 +56,23 @@
   margin-top: 6px;
 }
 
+#resume .download {
+  padding-top: 6px;
+  text-align: center;
+}
+#resume .download .button {
+  background: #c5c5c5;
+  color: #3d3d3d;
+}
+#resume .download .button:hover {
+  background: #a1a1a1;
+  color: #000;
+}
+#resume .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
@@ -64,6 +82,7 @@
   float: left;
   padding: 0;
   text-align: left;
+  margin-top: 15px;
 }
 .bars .skills {
   margin-top: 36px;

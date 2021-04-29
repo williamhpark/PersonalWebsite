@@ -19,37 +19,33 @@
   color: #fff;
   margin-bottom: 12px;
 }
+#about h3 {
+  font: "opensans-bold", sans-serif;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 #about p {
   line-height: 30px;
   color: #8b8b8b;
 }
 #about .profile-pic {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   border-radius: 100%;
 }
 #about .contact-details {
   width: 41.66667%;
 }
-#about .download {
-  width: 58.33333%;
-  padding-top: 6px;
+
+#about .fav-things {
+  margin-top: 20px;
 }
-#about .main-col {
-  padding-right: 5%;
-}
-#about .download .button {
-  margin-top: 6px;
-  background: #444;
-}
-#about .download .button:hover {
-  background: #fff;
-  color: #2b2b2b;
-}
-#about .download .button i {
-  margin-right: 15px;
-  font-size: 20px;
+#about .fav-things div {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* screenwidth less than 900px
@@ -75,7 +71,7 @@
      -------------------------------------------------------------------- */
   #about .profile-pic {
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 30px auto;
   }
   #about h2 {
     text-align: center;

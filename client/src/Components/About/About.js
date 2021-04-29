@@ -1,14 +1,23 @@
 import React from "react";
 
 import "./About.css";
-import resume from "../../assets/documents/resume_WilliamPark.pdf";
 
 const About = (props) => {
   let profilePic = "";
   let bio = "";
+  let song = "";
+  let movieImage = "";
+  let movieLink = "";
+  let bookImage = "";
+  let bookLink = "";
   if (props.data) {
     profilePic = "images/" + props.data.image;
     bio = props.data.bio;
+    song = props.data.song.link;
+    movieImage = props.data.movie.image;
+    movieLink = props.data.movie.link;
+    bookImage = props.data.book.image;
+    bookLink = props.data.book.link;
   }
 
   return (
@@ -23,19 +32,54 @@ const About = (props) => {
         </div>
         <div className="nine columns main-col">
           <h2>About Me</h2>
-          <p>{bio}</p>
-          <div className="row">
-            <div className="columns download">
-              <p>
-                <a
-                  href={resume}
-                  className="button"
-                  download="WilliamPark_resume"
-                >
-                  <i className="fa fa-download"></i>Download Resume
-                </a>
-              </p>
-            </div>
+          <p>
+            {bio} If you want to see some of the music I like playing, check out
+            my instagram account{" "}
+            <a
+              href="https://www.instagram.com/williamparkmusic/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @williamparkmusic
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+      <div className="fav-things">
+        <div className="row">
+          <div className="twelve columns">
+            <h3>My favourite things this month</h3>
+          </div>
+        </div>
+        <div className="row">
+          <div className="four columns">
+            <p>Song</p>
+            <iframe
+              src={song}
+              width="250"
+              height="250"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+          <div className="four columns">
+            <p>Movie</p>
+            <a href={movieLink} target="_blank" rel="noreferrer">
+              <img
+                src={movieImage}
+                alt="Movie poster"
+                width="250"
+                height="250"
+              />
+            </a>
+          </div>
+          <div className="four columns">
+            <p>Book</p>
+            <a href={bookLink} target="_blank" rel="noreferrer">
+              <img src={bookImage} alt="Book cover" width="250" height="250" />
+            </a>
           </div>
         </div>
       </div>

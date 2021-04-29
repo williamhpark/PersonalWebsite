@@ -4,30 +4,26 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = (props) => {
-  const [contactName, setContactName] = useState("");
-  const [contactEmail, setContactEmail] = useState("");
-  const [contactSubject, setContactSubject] = useState("");
-  const [contactMessage, setContactMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [disabled, setDisabled] = useState(false);
   const [emailSent, setEmailSent] = useState(undefined);
 
-  let name = "";
-  let phone = "";
-  let email = "";
-  let message = "";
+  let contactName = "";
+  let contactPhone = "";
+  let contactEmail = "";
+  let contactMessage = "";
   if (props.data) {
-    name = props.data.name;
-    phone = props.data.phone;
-    email = props.data.email;
-    message = props.data.contactmessage;
+    contactName = props.data.name;
+    contactPhone = props.data.phone;
+    contactEmail = props.data.email;
+    contactMessage = props.data.contactmessage;
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(contactName);
-    console.log(contactEmail);
-    console.log(contactSubject);
-    console.log(contactMessage);
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -44,10 +40,10 @@ const Contact = (props) => {
         ) {
           setDisabled(true);
           setEmailSent(true);
-          setContactName("");
-          setContactEmail("");
-          setContactSubject("");
-          setContactMessage("");
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
         } else {
           setDisabled(false);
           setEmailSent(false);
@@ -70,7 +66,7 @@ const Contact = (props) => {
         </div>
 
         <div className="ten columns">
-          <p className="lead">{message}</p>
+          <p className="lead">{contactMessage}</p>
         </div>
       </div>
 
@@ -79,89 +75,98 @@ const Contact = (props) => {
           <form onSubmit={handleSubmit} id="contactForm" name="contactForm">
             <fieldset>
               <div>
-                <label htmlFor="contactName">
+                <label htmlFor="name">
                   Name <span className="required">*</span>
                 </label>
                 <input
                   type="text"
                   size="35"
-                  id="contactName"
-                  name="contactName"
-                  value={contactName}
-                  onChange={(e) => setContactName(e.target.value)}
+                  id="name"
+                  name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="contactEmail">
+                <label htmlFor="email">
                   Email <span className="required">*</span>
                 </label>
                 <input
                   type="email"
                   size="35"
-                  id="contactEmail"
-                  name="contactEmail"
-                  value={contactEmail}
-                  onChange={(e) => setContactEmail(e.target.value)}
+                  id="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="contactSubject">Subject</label>
+                <label htmlFor="subject">Subject</label>
                 <input
                   type="text"
                   size="35"
-                  id="contactSubject"
-                  name="contactSubject"
-                  value={contactSubject}
-                  onChange={(e) => setContactSubject(e.target.value)}
+                  id="subject"
+                  name="subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
 
               <div>
-                <label htmlFor="contactMessage">
+                <label htmlFor="message">
                   Message <span className="required">*</span>
                 </label>
                 <textarea
                   cols="50"
                   rows="15"
-                  id="contactMessage"
-                  name="contactMessage"
+                  id="message"
+                  name="message"
                   resize="vertical"
-                  value={contactMessage}
-                  onChange={(e) => setContactMessage(e.target.value)}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                 ></textarea>
               </div>
 
               <div>
-                <button className="submit" type="submit" disabled={disabled}>
-                  Submit
-                </button>
-                {/* <span id="image-loader">
-                  <img alt="" src="images/loader.gif" />
-                </span> */}
+                {disabled ? (
+                  <button className="submit-disabled" type="submit" disabled>
+                    Submit
+                  </button>
+                ) : (
+                  <button className="submit" type="submit">
+                    Submit
+                  </button>
+                )}
               </div>
             </fieldset>
           </form>
 
-          <div id="message-warning">Error</div>
-          <div id="message-success">
-            <i className="fa fa-check"></i>Your message was sent, thank you!
-            <br />
-          </div>
+          {emailSent === false && (
+            <div id="message-warning">
+              <i className="fa fa-times"></i>Error, please try again later.
+            </div>
+          )}
+          {emailSent === true && (
+            <div id="message-success">
+              <i className="fa fa-check"></i>Your message was sent, thank you!
+              <br />
+            </div>
+          )}
         </div>
 
         <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
             <h4>Contact Info</h4>
             <p className="address">
-              {name}
+              {contactName}
               <br />
-              {email} <br />
-              <span>{phone}</span>
+              {contactEmail} <br />
+              <span>{contactPhone}</span>
             </p>
           </div>
         </aside>

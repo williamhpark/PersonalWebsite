@@ -53,7 +53,7 @@
 
 /* contact form */
 #contact form {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 #contact label {
   font: 15px/24px "opensans-bold", sans-serif;
@@ -82,21 +82,29 @@
   color: #fff;
   background-color: #11abb0;
 }
-#contact button.submit {
+#contact button.submit,
+button.submit-disabled {
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
-  background: #0d0d0d;
   border: none;
-  /* cursor: pointer; */
   height: auto;
   display: inline-block;
   border-radius: 3px;
   margin-left: 26%;
 }
+#contact button.submit {
+  color: #fff;
+  background: #0d0d0d;
+  cursor: pointer;
+}
 #contact button.submit:hover {
   color: #0d0d0d;
   background: #fff;
+}
+#contact button.submit-disabled {
+  color: #0d0d0d;
+  background: rgb(114, 114, 114);
+  cursor: auto;
 }
 #contact span.required {
   color: #11abb0;
@@ -104,7 +112,6 @@
 }
 #message-warning,
 #message-success {
-  display: none;
   background: #0f0f0f;
   padding: 24px 24px;
   margin-bottom: 36px;
@@ -185,7 +192,8 @@
     margin-bottom: 6px;
     width: 100%;
   }
-  #contact button.submit {
+  #contact button.submit,
+  button.submit-disabled {
     margin: 30px 0 24px 0;
   }
   #message-warning,

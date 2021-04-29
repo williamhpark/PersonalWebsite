@@ -90,6 +90,7 @@ const Carousel = () => {
                   __html: `<p>${item.text}</p>`,
                 }}
               />
+              <br />
               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 Github
               </a>

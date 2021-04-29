@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Resume.css";
+import resume from "../../assets/documents/resume_WilliamPark.pdf";
 
 const Resume = (props) => {
   let skillmessage = "";
@@ -83,6 +84,15 @@ const Resume = (props) => {
           <div className="bars">
             <ul className="skills">{skills}</ul>
           </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="download">
+          <p>
+            <a href={resume} className="button" download="WilliamPark_resume">
+              <i className="fa fa-download"></i>Download Resume
+            </a>
+          </p>
         </div>
       </div>
     </section>
