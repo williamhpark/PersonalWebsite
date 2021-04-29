@@ -80,7 +80,7 @@
 @media only screen and (max-width: 900px) {
   .carousel-container {
     width: 90vw;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   #arrow-left,
   #arrow-right {
@@ -89,10 +89,9 @@
 }
 
 @media (max-width: 767px) {
-  /* .carousel-container {
-    width: 90vw;
-    margin-bottom: 10rem;
-  } */
+  .carousel-container {
+    margin-bottom: 5rem;
+  }
   #arrow-left,
   #arrow-right {
     top: 65%;
