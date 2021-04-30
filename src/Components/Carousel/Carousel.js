@@ -21,22 +21,22 @@ const Carousel = () => {
     },
     {
       id: 1,
-      title: "Flicker",
-      text:
-        "A Tinder-esque web app designed to make the process of deciding on something to watch on Netflix with a group of people easier. Check it out at <a href='https://flickerapp.herokuapp.com/' target='_blank' rel='noopener noreferrer'>flickerapp.herokuapp.com</a>.",
-      src: netflix,
-      alt: "Second slide showing the Netflix logo",
-      link: "https://github.com/williamhpark/movie-tinder",
-      modalShow: false,
-    },
-    {
-      id: 2,
       title: "Resto Bot",
       text:
         "An automated Facebook messenger bot with natural language processing support to help groups decide on a restaurant to dine at together. This was my group's submission for Hack the North 2020++, and we ended up placing as a finalist for the Best Use of Facebook API prize. For more information, you can check out my group's submission on <a href='https://devpost.com/software/resto-bot' target='_blank' rel='noopener noreferrer'>devpost</a>.",
       src: restobot,
       alt: "Third slide showing the Resto Bot cover image",
       link: "https://github.com/williamhpark/RestoBot",
+      modalShow: false,
+    },
+    {
+      id: 2,
+      title: "Flicker",
+      text:
+        "A Tinder-esque web app designed to make the process of deciding on something to watch on Netflix with a group of people easier. Check it out at <a href='https://flickerapp.herokuapp.com/' target='_blank' rel='noopener noreferrer'>flickerapp.herokuapp.com</a>.",
+      src: netflix,
+      alt: "Second slide showing the Netflix logo",
+      link: "https://github.com/williamhpark/movie-tinder",
       modalShow: false,
     },
     {
