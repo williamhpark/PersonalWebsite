@@ -49,7 +49,7 @@ const Header = (props) => {
           </li>
           <li>
             <a className="smoothscroll" href="#resume">
-              Resume
+              Resumé
             </a>
           </li>
           <li>
