@@ -33,8 +33,15 @@ const About = (props) => {
         <div className="nine columns main-col">
           <h2>About Me</h2>
           <p>
-            {bio} If you want to see some of the music I like playing, check out
-            my instagram account{" "}
+            {bio} If you want to see some of the music I like playing, click{" "}
+            <a
+              href="https://youtu.be/9rpLf5_AAzc"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>{" "}
+            or check out my instagram account{" "}
             <a
               href="https://www.instagram.com/williamparkmusic/"
               target="_blank"

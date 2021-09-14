@@ -53,56 +53,46 @@
       {
         "school": "University of Waterloo",
         "degree": "BASc Computer Engineering",
-        "graduated": "Present",
-        "description": ""
+        "graduated": "September 2019 - Present",
+        "description": [
+          "GPA: 3.90/4.00",
+          "President's Scholarship of Distinction (awarded to students with an admission average of 95% or higher)",
+          "Nortel Networks Undergraduate Scholarship (awarded to outstanding students entering Year One of Electrical and Computer Engineering)"
+        ]
       }
     ],
     "work": [
       {
-        "company": "Unyte Health Inc",
-        "title": "Software Developer",
+        "company": "Waterloop (Design Team)",
+        "title": "Web Team Lead / Full Stack Developer",
         "years": "May 2021 - Present",
-        "description": ""
+        "description": [
+          "Currently leading a group of 15 members on the Waterloop web development team in creating a suite of applications, including the main team website, content-management system (CMS), and analytics dashboard, to increase the team’s outreach, streamline day-to-day operations, and give executives insight on how to improve management within the team through analytics.",
+          "Built the backend for automated newsletter sign-up on the main website using Express.js and Knex.js and wrote integration test cases using Mocha and Chai for high test efficiency when testing the RESTful API endpoints.",
+          "Added features to the CMS on the frontend with React and Redux as well as the backend with Express.js and Knex.js to give authorized members the ability to conveniently update teams and recruitments postings listed on the main website.",
+          "Improved responsiveness of the main website using Typescript and media queries for a better mobile experience."
+        ]
+      },
+      {
+        "company": "Unyte-iLs",
+        "title": "Full Stack Developer",
+        "years": "May 2021 - August 2021",
+        "description": [
+          "Contributed to the development of full stack web applications for Unyte-iLs, a provider of programs that improve cognitive, language and social abilities for clients, merging a total of 90 pull requests across three project codebases.",
+          "Headed the implementation of new features for the user data management application, including displaying customer DEAR and Magento order data, to streamline customer support for the customer service and engineering teams. Updated the application’s internal API using Express.js and the Sequelize ORM to return necessary data to the frontend, developed using React and Redux.",
+          "Automated the conversion and stitching of more than 3,000 audio files for Unyte’s Focus mobile application using Bash scripting and the FFmpeg library, reducing the time needed to process the files from several weeks down to one day.",
+          "Developed and refactored Unyte’s automated error identification Slack messaging system using Express.js and the Slack API, increasing the identification of system errors and customer issues that need to be addressed by 20%."
+        ]
       },
       {
         "company": "YuJa",
         "title": "Software Developer in Test",
         "years": "January 2020 - April 2020",
-        "description": "Executed automation tests using Selenium WebDriver with Java and TestNG to verify site functionality for YuJa, a media solutions platform designed for use by educational institutions and enterprises. Performed analysis and reporting on more than 500 Jira tickets regarding ongoing web, desktop, and mobile application systems. Recommended design and functionality aspects for web and mobile application features during daily SCRUM meetings based on client needs, primarily for the YuJa video-conferencing application."
-      }
-    ],
-    "skills": [
-      {
-        "name": "JavaScript",
-        "level": "90%"
-      },
-      {
-        "name": "C++",
-        "level": "90%"
-      },
-      {
-        "name": "Python",
-        "level": "80%"
-      },
-      {
-        "name": "NodeJS",
-        "level": "60%"
-      },
-      {
-        "name": "ReactJs",
-        "level": "90%"
-      },
-      {
-        "name": "Flask",
-        "level": "50%"
-      },
-      {
-        "name": "PostgreSQL",
-        "level": "50%"
-      },
-      {
-        "name": "TensorFlow",
-        "level": "40%"
+        "description": [
+          "Executed and debugged automation tests using Selenium WebDriver with Java and TestNG to verify site functionality for YuJa, a media solutions platform designed for use by educational institutions and enterprises.",
+          "Performed analysis and reporting on more than 500 Jira tickets regarding ongoing web, desktop, and mobile application systems.",
+          "Recommended design and functionality aspects for web and mobile application features during daily SCRUM meetings based on client needs, primarily for the YuJa video-conferencing application."
+        ]
       }
     ]
   },
@@ -143,12 +133,12 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user": "Kareem Abdul Jabbar"
+        "text": "I have had the opportunity to work with several co-op students during my time as a Product Manager and William is amongst the very best of the best. His unique combination of technical talent and soft skills enabled him to provide invaluable contributions to advance several key projects. His maturity is beyond his years, and I was especially struck by his curiosity; in meetings William would ask thoughtful questions that demonstrated his attention to detail and helped the team identify gaps before they became problems. Additionally, he is an exemplary team player and was always willing to help to others whenever needed. It was a pleasure working with William and I can recommend him without reservation - any organization would be fortunate to have him on board.",
+        "user": "Rami Saab (Former Product Manager at Unyte-iLs)"
       },
       {
-        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Steve Wozniak... impersonator"
+        "text": "William joined as for his co-op term and immediately made a positive impression with his willingness to learn and help. He ramped up quickly and contributed significantly to the team. In addition to his solid technical abilities, he's a team player with great communication and people skills and was a pleasure to work with. Thank you William! Hopefully our paths will cross again in the future.",
+        "user": "Anthony Kanfer (CTO at Unyte-iLs)"
       }
     ]
   }
