@@ -70,7 +70,7 @@
           "Currently leading a group of 15 members on the Waterloop web development team in creating a suite of applications, including the main team website, content-management system (CMS), and analytics dashboard, to increase the team’s outreach, streamline day-to-day operations, and give executives insight on how to improve management within the team through analytics.",
           "Built the backend for automated newsletter sign-up on the main website using Express.js and Knex.js and wrote integration test cases using Mocha and Chai for high test efficiency when testing the RESTful API endpoints.",
           "Added features to the CMS on the frontend with React and Redux as well as the backend with Express.js and Knex.js to give authorized members the ability to conveniently update teams and recruitments postings listed on the main website.",
-          "Improved responsiveness of the main website using Typescript and media queries for a better mobile experience."
+          "Improved responsiveness of the main website using TypeScript and media queries for a better mobile experience."
         ]
       },
       {
